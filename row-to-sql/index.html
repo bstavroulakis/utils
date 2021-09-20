@@ -12,8 +12,8 @@
         "input",
         function () {
           let rows = area.value;
-          rows = rows.replaceAll(/(.*?)\n/gi, '"$1",\n');
-          rows = rows.replace(/(.*?)$/gi, '"$1');
+          rows = rows.replaceAll(/(.*?)\n/gi, "'$1',\n");
+          rows = rows.replace(/(.*?)$/gi, "'$1");
           console.log(rows);
           results.innerHTML = rows;
         },
